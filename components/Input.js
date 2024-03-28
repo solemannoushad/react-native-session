@@ -1,30 +1,22 @@
 import React from 'react'
-import {  TextInput, StyleSheet } from 'react-native'
+import {  TextInput, Text } from 'react-native'
+import { styles } from '../styles/style'
 
 export default function Input(props){
 
-    console.log("Input");
-
     return(
+      <>
+        <Text>{props.label}</Text>      
         <TextInput
           style={styles.input}
           placeholder= {props.place}
-          placeholderTextColor={'black'}
+          placeholderTextColor={'gray'}
+          secureTextEntry={props.password || false}
         />
+      </>
     )
 }
 
-const styles = StyleSheet.create({
-  
-    input: {
-      backgroundColor: '#eeeeee',
-      padding: 20,
-      width: 250,
-      borderWidth: 1,
-      borderColor: 'black',
-      borderRadius: 20
-    }
-  });
 
 
 

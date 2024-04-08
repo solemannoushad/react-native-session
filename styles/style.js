@@ -27,13 +27,15 @@ export const styles = StyleSheet.create({
       justifyContent: 'center',
       padding: 7,
       marginVertical: 10,
-      borderRadius: 8
+      borderRadius: 8,
+      flexDirection: 'row'
 
     },
     btnTxt: {
       fontSize: 20,
       color: 'white',
-      fontWeight: 'bold'
+      fontWeight: 'bold',
+      marginLeft: 10
     },
     userBoxMain: {
       flex: 1,

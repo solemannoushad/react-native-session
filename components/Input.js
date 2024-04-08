@@ -12,6 +12,8 @@ export default function Input(props){
           placeholder= {props.place}
           placeholderTextColor={'gray'}
           secureTextEntry={props.password || false}
+          value={props.value}
+          onChangeText={props.onChange}
         />
       </>
     )
